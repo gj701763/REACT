@@ -13,7 +13,7 @@ const Contact = () => {
               <p className="mt-2 text-lg font-medium text-gray-600 text-normal sm:text-xl">
                 Fill in the form to start a conversation
               </p>
-
+ 
               <div className="flex items-center mt-8 text-gray-600">
                 <svg
                   fill="none"
