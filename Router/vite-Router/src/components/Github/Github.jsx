@@ -47,12 +47,17 @@ function Github() {
       </div>
       <div className="flex ">
         <div className="flex flex-col p-5 w-[25%] leading-5">
-          <img
-            className="rounded-full"
-            src={data.avatar_url}
-            alt="Git picture"
-            width={270}
-          />
+          <div className="relative">
+            <img
+              className="z-0 rounded-full"
+              src={data.avatar_url}
+              alt="Git picture"
+              width={270}
+            />
+            <div className="absolute z-10 flex items-center justify-center w-10 h-10 text-xs transition duration-300 ease-in-out delay-150 bg-white border border-yellow-900 rounded-full cursor-pointer right-16 bottom-7 hover:-translate-y-1 hover:scale-110 ">
+              🎯
+            </div>
+          </div>
           <div className="flex flex-col items-start gap-1 p-5">
             <h3 className="text-xl font-semibold ">{data.name}</h3>
             <p className="pb-5 text-md">{data.login}</p>
